@@ -1,5 +1,4 @@
 /*stylesheet for portfolio page*/
-
 body{
     margin: 0;
     position: absolute;
@@ -321,4 +320,40 @@ h2{
 
 .aboutMe .fa-chevron-up:hover{
     color: yellow;
+}
+
+.projects #proj{
+    height: 3px;
+    background-color: yellow;
+    border: none;
+    width: 20%;
+}
+
+.project1 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.425);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 30%;
+    background-color: rgb(173, 171, 171);
+    float: left;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  
+/* On mouse-over, add a deeper shadow */
+.project1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.815);
+}
+  
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+    text-align: center;
+    font-family: 'Lexend Peta', sans-serif;
+    color: black;
+}
+
+#card1{
+    text-decoration: none;
 }
