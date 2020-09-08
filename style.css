@@ -1,0 +1,324 @@
+/*stylesheet for portfolio page*/
+
+body{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*css for mobile size screens*/
+@media screen and (max-width: 500px) {
+    div.hi{
+        padding-top: 15%;
+    }
+
+    div.intro h1{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    div.intro{
+      justify-content: center;
+      align-self: center;
+    }
+
+    div.image{
+        margin: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    div.image #me{
+        justify-self: center;
+        align-self: center;
+        margin: auto;
+        width: 7em;
+        height: 7em;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+}
+
+/*css for tablet size screens*/
+@media screen and (max-width: 770px) {
+    div.hi{
+        display: grid;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    div.intro{
+      justify-content: center;
+      align-self: center;
+    }
+
+    div.image{
+        margin: 0;
+        justify-self: center;
+    }
+
+    div.image #me{
+        justify-self: center;
+        margin: 0;
+        width: 7em;
+        height: 7em;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+}
+
+/*header .intro{
+    display: grid;
+    background: url(wall.jpg) no-repeat;
+    box-shadow: 10px 10px 5px #301e0bab;
+    background-size: cover;
+    height: 400px;
+    flex-direction: column;
+    margin: 5.5% 30% 3.5% 30%;
+    border-radius: 1.2%;
+}
+.intro .hi{
+    display: grid;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    background: #57432dab;
+    border-radius: 1.2%;
+}
+
+.intro .image{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-self: right;
+    justify-self: right;
+}
+
+.image #me{
+    width: 12em;
+    height: 12em;
+    border: 1px solid #1d1307c4;
+    border-radius: 50%;
+    justify-self: center;
+    box-shadow: 0 3px 3px 2px #1a140dab;
+    margin-top: 1.5%;
+}
+*/
+
+header{
+    background: url(triangle.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 625px;
+    margin-bottom: 0;
+}
+
+header .right a{
+    cursor: default;
+    font-size: 1.35em;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    font-family: 'Lexend Peta', sans-serif;
+}
+  
+ul.topnav li {
+    float: left;
+}
+  
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    height: 1.5em;
+    font-size: 1em;
+}
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 49%;
+    right: 49%;
+    bottom: 0;
+    background: yellow;
+    height: 3.5px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    margin-left: 5px;
+    margin-right: 6.5px;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+  
+/*ul.topnav li a:hover:not(.active) {
+    background-color: yellow;
+    border-radius: 10%;
+}*/
+  
+/*ul.topnav li a.active {
+    background-color: #fdfcfbfb;
+}*/
+  
+ul.topnav li.right {
+    float: right;
+}
+  
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {
+        float: none;
+    }
+}
+
+.intro{
+    display: grid;
+    width: 100%;
+    margin: 10% 50% 10% 0;
+}
+
+.intro .name{
+    font-size: 1.25em;
+    font-family: 'Quicksand', sans-serif;
+    color: #f7f311;
+    margin-left: 5%;
+    word-spacing: 17px;
+    margin-top: 1px;
+}
+
+.name h4{
+    color: white;
+    margin-left: 12.2%;
+    font-size: 1.2em;
+    word-spacing: 10px;
+    margin-bottom: 2px;
+    font-family: 'Lexend Peta', sans-serif;
+    font-weight: lighter;
+}
+
+.intro .icons i{
+    padding: 0 10px;
+    font-size: 1.15em;
+    margin-left: 2%;
+    color: white;
+    border-radius: 50%;
+    height: 30px;
+    padding-top: 5.5px;
+}
+
+.intro .icons{
+    margin-left: 3%;
+}
+
+.intro .icons .fa-github:hover {
+    background-color: black;
+}
+
+.intro .icons .fa-linkedin:hover {
+    background-color: #0072b1;
+}
+
+.intro .icons .fa-twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.intro .icons .fa-envelope:hover {
+    background-color: #C71610;
+}
+
+section{
+    background-color: rgba(0, 0, 0, 0.795);
+    margin-top: 0;
+    height: 625px;
+    width: 100%;
+}
+h2{
+    text-align: center;
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 1.35em;
+    color: white;
+    margin-top: 0;
+    padding-top: 2.5%;
+}
+
+.aboutMe #about{
+    height: 3px;
+    background-color: yellow;
+    border: none;
+    width: 20%;
+}
+
+.aboutMe .about{
+    margin-top: 8%;
+}
+
+.aboutMe .about .about1{
+    width: 50%;
+    float: left;
+}
+
+.aboutMe .about .about2{
+    width: 50%;
+    float: right;
+}
+
+.aboutMe .about .about1 #prisc{
+    width: 75%;
+    color: white;
+    text-align: justify;
+    font-family: 'Lexend Peta', sans-serif;
+    margin: 6% auto;
+    line-height: 1.5em;
+}
+
+.aboutMe .about .about1 a{
+    text-decoration: none;
+    color: yellow;
+}
+
+.aboutMe .about .about2 #me{
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 50%;
+}
+
+.aboutMe .fa-chevron-up{
+    color: white;
+    font-size: 1.4em;
+    margin-top: 6%;
+    margin-left: 95%;
+}
+
+.aboutMe .fa-chevron-up:hover{
+    color: yellow;
+}
