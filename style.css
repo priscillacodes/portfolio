@@ -311,14 +311,14 @@ h2{
     border-radius: 50%;
 }
 
-.aboutMe .fa-chevron-up{
+.fa-chevron-up{
     color: white;
     font-size: 1.4em;
     margin-top: 6%;
     margin-left: 95%;
 }
 
-.aboutMe .fa-chevron-up:hover{
+.fa-chevron-up:hover{
     color: yellow;
 }
 
